@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life at the House | Telluride House at Cornell</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="src/images/logo.png" alt="Telluride Logo">
+      <strong>Telluride House <br> at Cornell University</strong>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="about.html">About ▾</a>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="life.html">Life at the House</a>
+        </div>
+      </div>
+      <a href="#">Apply</a>
+      <a href="#">House Members</a>
+      <a href="#">Scholarship</a>
+      <a href="#">CBTA Guest House</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Life at the House</h1>
+      <p>
+        At Telluride House, life goes beyond academics — here, members live, engage, govern, and grow together in a community built on shared ideals.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <h2>House Membership & Diversity of Fields</h2>
+    <p>
+      Housemembers include both undergraduates and graduates enrolled at Cornell University across fields such as English, Linguistics, History, Government, Philosophy, Africana Studies, Development Sociology, City & Regional Planning, Labor Relations, Anthropology, Law, Biochemistry, Chemistry, Neurobiology, Mathematics, Physics, and Engineering. Faculty also sometimes live at the House.  
+    </p>
+
+    <h2>Intellectual Life & Academics</h2>
+    <p>
+      Whether through organized events or informal evening discussions, life at Telluride challenges members to explore ideas together. The House provides resources for academic seminars and events, and members regularly benefit from intellectual exchange across disciplines.
+    </p>
+    <p>
+      <strong>Academic Fellowships:</strong> The Telluride Association offers stipends and fellowships to housemembers, including support for graduate-level work at Cornell or Central European University in Budapest.  
+    </p>
+    <p>
+      <strong>Public Speaking Program:</strong> Every member participates in a public speaking program designed to develop oratorical skills. Formats vary — from formal annual presentations to shorter, impromptu talks during the year.  
+    </p>
+
+    <h2>Democratic Self-Governance</h2>
+    <p>
+      Telluride House is run democratically by its own community. Members have autonomy in deciding day-to-day operations and determining the focus and direction of life in the House.  
+    </p>
+    <p>
+      Weekly house meetings are held to address major decisions and collective governance. Members also share in practical responsibilities: supervising maintenance, overseeing renovations, hiring staff, and liaising with contractors. Responsibilities are organized through committees and officers.
+    </p>
+
+    <h2>Faculty & Visiting Scholars</h2>
+    <p>
+      Each year, a small number of Cornell faculty are invited to live at the House for one- or two-year terms, with full room and board. These faculty hosts often lead seminars, attend dinners, and engage directly with members intellectually and socially.  
+    </p>
+    <p>
+      The House also accommodates short-term guests, such as conference speakers, artists, and visiting scholars. Preference is given to those who would be unable to travel without lodging support.  
+    </p>
+  </main>
+
+  <footer>
+    <p><strong>Telluride House at Cornell University</strong> — 217 West Avenue, Ithaca, NY 14850</p>
+    <p>Email: <a href="mailto:telluride@cornell.edu">telluride@cornell.edu</a> | Phone: (607) 273-5011</p>
+    <p>
+      <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 A…"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14C2.238 0 0 2.238 0 5v14…"/>
+        </svg>
+      </a>
+    </p>
+    <p>© 2025 Telluride House at Cornell University</p>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    });
+  </script>
+</body>
+</html>
