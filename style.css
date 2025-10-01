@@ -119,25 +119,35 @@ main {
 }
 .alumni-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
-}
-.alumni-member {
+  }
+  
+  .alumni-member {
     text-align: center;
-}
-.alumni-member img {
+  }
+  
+  .alumni-member img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.alumni-member h4 {
-    margin: 0.5rem 0 0.25rem;
+    height: 240px;         /* ✅ fixed uniform height */
+    object-fit: cover;     /* ✅ keeps proportion, crops nicely */
+    border-radius: 6px;    /* optional: remove if you want sharp edges */
+    margin-bottom: 0.6rem;
+  }
+  
+  .alumni-member h4 {
+    margin: 0.3rem 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
     color: #333;
-}
-.alumni-member p {
+  }
+  
+  .alumni-member p {
     font-size: 0.9rem;
     color: #666;
-}
+    margin: 0;
+  }
+  
 
 /* Footer */
 footer {
@@ -196,3 +206,27 @@ footer a:hover {
     cursor: pointer;
     font-weight: 600;
 }
+
+.pillars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .pillars img {
+    width: 200px;   /* adjust pillar size */
+    height: auto;
+  }
+  
+  .pillars p {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    line-height: 1.4;
+    color: rgb(73, 71, 71);
+  }
+  

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBTA Guest House | Telluride House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .timeline {
+      position: relative;
+      margin: 4rem auto;
+      padding-left: 2rem;
+      border-left: 3px solid #62311a;
+      max-width: 800px;
+    }
+    .timeline-item {
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: attr(data-step);
+      position: absolute;
+      left: -2.8rem;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      background: #62311a;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .timeline-item p {
+      margin: 0.3rem 0 0;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .timeline-contact {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .timeline-contact a {
+      color: #62311a;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    header {background: #62311a;}
+</style>
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <div class="logo">
+      <img src="src/images/logo.png" alt="Telluride Logo">
+      <strong>Telluride House <br> at Cornell University</strong>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="about.html">About ▾</a>
+        <div class="dropdown-content">
+          <a href="about.html">About Us</a>
+          <a href="life.html">Life at the House</a>
+        </div>
+      </div>
+      <a href="#">Apply</a>
+      <a href="#">House Members</a>
+      <a href="#">Scholarship</a>
+      <a href="guesthouse.html">CBTA Guest House</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin-top:6rem;">Guest Room Guidelines & Policies</h1>
+
+    <section class="timeline">
+      <div class="timeline-item" data-step="01">
+        <h3>Reservations</h3>
+        <p>To reserve a guest room, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLScce9sAK13II6LsIp0dBPUL5PxomhkhGmEd8dO6IijHy5v_7g/viewform">this form</a>.</p>
+      </div>
+      <div class="timeline-item" data-step="02">
+        <h3>Confirmation</h3>
+        <p>Once your request has been received, you will receive a confirmation email from cbtabookings@gmail.com with details.</p>
+      </div>
+      <div class="timeline-item" data-step="03">
+        <h3>Cancellation</h3>
+        <p>If you need to cancel your reservation, please notify us as soon as possible so we can accommodate other guests.</p>
+      </div>
+      <div class="timeline-item" data-step="04">
+        <h3>Meals</h3>
+        <p>If you plan to dine at Telluride, please note any dietary preferences or restrictions in the form.</p>
+      </div>
+      <div class="timeline-item" data-step="05">
+        <h3>Clean-up</h3>
+        <p>We kindly encourage guests to tidy up after their stay.</p>
+      </div>
+      <div class="timeline-item" data-step="06">
+        <h3>Keys</h3>
+        <p>Before you leave, please ensure you return the keys to avoid inconvenience.</p>
+      </div>
+      <div class="timeline-item" data-step="07">
+        <h3>Smoking Policy</h3>
+        <p>Smoking is strictly prohibited in all guest rooms, and common areas.</p>
+      </div>
+    </section>
+
+    <div class="timeline-contact">
+      <p><strong>Contact:</strong> For any inquiries, please email 
+        <a href="mailto:cbtabookings@gmail.com">cbtabookings@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Telluride House at Cornell University</strong> — 217 West Avenue, Ithaca, NY 14850</p>
+    <p>© 2025 Telluride House at Cornell University</p>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+</body>
+</html>

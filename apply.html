@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | Telluride House at Cornell</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .apply-content {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    .apply-content h2, .apply-content h3 {
+      font-family: "Playfair Display", serif;
+      color: #62311a;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .apply-content a {
+      color: #cf5959;
+      text-decoration: underline;
+    }
+    .faq-list {
+      margin-top: 1rem;
+    }
+    .faq-list li {
+      margin-bottom: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">
+          <img src="src/images/logo.png" alt="Telluride Logo">
+          <strong>Telluride House <br> at Cornell University</strong>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          
+          <div class="dropdown">
+            <a href="about.html">About ▾</a>
+            <div class="dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="life.html">Life at the House</a>
+            </div>
+          </div>
+          
+          <a href="apply.html">Apply</a>
+          <a href="people.html">People</a>
+          <a href="#">Scholarship</a>
+          <a href="guesthouse.html">CBTA Guest House</a>
+        </nav>
+      </header>
+
+  <!-- Hero -->
+  <section class="hero life-hero">
+    <div class="hero-content">
+      <h1>Apply to the Telluride House</h1>
+      <p>
+        Join a vibrant community of scholars at Cornell dedicated to 
+        <strong>intellectual inquiry</strong>, <strong>democratic self-governance</strong>, and <strong>communal living</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="apply-content">
+    <p>
+      The Telluride House at Cornell University is an educational program of the 
+      <a href="http://www.tellurideassociation.org" target="_blank">Telluride Association</a>, 
+      providing full room and board scholarships to Cornell University students and faculty members.
+    </p>
+
+    <h2>Inquiries</h2>
+    <p>
+      Questions? Email us at <a href="mailto:cbta.apply@tellurideassociation.org">cbta.apply@tellurideassociation.org</a> 
+      with the subject line “2026 Preferment.”
+    </p>
+
+    <h2>Nunnian Program Alumni</h2>
+    <p>
+      The 2026–2027 application cycle for alumni of Nunnian programs 
+      (Arete Project, Outer Coast, Thoreau College, TASPs, Lamplight, Deep Springs) is 
+      <strong>Open</strong>.
+    </p>
+
+    <h2>Cornell Undergraduates & Graduate Students</h2>
+    <p>
+      The 2026–2027 application cycle for Cornell students is <strong>CLOSED</strong>.
+    </p>
+
+    <h2>Sidgwick-Miller CEU Scholarship</h2>
+    <p>
+      Information is provided directly to eligible CEU PhD students by the CEU Academic Cooperation 
+      and Research Support Office.
+    </p>
+
+    <h2>Atkinson-Tetreault Scholarship</h2>
+    <p>
+      Information is provided directly to eligible students of the Cornell Master of Regional Planning course.
+    </p>
+
+    <h2>Faculty Fellowship</h2>
+    <p>
+      The 2026–2027 application cycle is <strong>OPEN</strong>. Please apply 
+      <a href="https://form.jotform.com/250655796411159" target="_blank">here</a>.
+    </p>
+    <p>
+      This opportunity is open to faculty and postdoctoral researchers at Cornell University and Ithaca College.
+      Fellows contribute to the intellectual life of the House through events, talks, and engagement with residents.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+    <ol class="faq-list">
+      <li><strong>Do I need to translate all of my certificates?</strong><br>
+      No, but include an explanation of the grading system.</li>
+
+      <li><strong>Is GPA considered?</strong><br>
+      No specific requirement, but residents must maintain a 3.0 GPA minimum.</li>
+
+      <li><strong>Can second-year undergraduates apply?</strong><br>
+      Only incoming 3rd or 4th-year undergraduates may apply.</li>
+
+      <li><strong>How long should my essay be?</strong><br>
+      Stick to the word limit, but a small variance is fine.</li>
+
+      <li><strong>What is the acceptance rate?</strong><br>
+      We do not disclose acceptance rates; we encourage all interested students to apply.</li>
+
+      <li><strong>Is there parking?</strong><br>
+      Yes, residents may park at the House.</li>
+
+      <li><strong>How inclusive is the House?</strong><br>
+      We are proud of our diversity and welcome all, regardless of identity or background.</li>
+
+      <li><strong>Are dietary restrictions accommodated?</strong><br>
+      Yes — vegan, vegetarian, gluten-free, and allergy needs are supported.</li>
+
+      <li><strong>How should I prepare for my interview?</strong><br>
+      Review your application and essays. Interviews are conducted by current members and are designed to get to know you, not stress you.</li>
+    </ol>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Telluride House at Cornell University</strong> — 217 West Avenue, Ithaca, NY 14850</p>
+    <p>Email: <a href="mailto:telluride@cornell.edu">telluride@cornell.edu</a></p>
+    <p>© 2025 Telluride House at Cornell University</p>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+</body>
+</html>
