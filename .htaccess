@@ -1,0 +1,6 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect any /main variant to full index.html URL
+RewriteRule ^main(/.*)?$ https://telluridehouse.org/index.html [R=301,L]

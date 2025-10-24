@@ -34,6 +34,7 @@ header.scrolled {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    
 }
 .logo img {
     height: 40px;
@@ -229,4 +230,30 @@ footer a:hover {
     line-height: 1.4;
     color: rgb(73, 71, 71);
   }
+  /* Logo link styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
   
+  .logo-link strong {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  /* Active menu highlighting */
+  nav a.active,
+  .dropdown > a.active {
+    color: #d4af37;           /* gold highlight */
+    border-bottom: 2px solid #d4af37;
+  }
+  
+  /* Optional hover effect */
+  nav a:hover {
+    color: #d4af37;
+  }

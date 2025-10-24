@@ -83,8 +83,10 @@
 <body>
   <header id="navbar">
     <div class="logo">
-      <img src="src/images/logo.png" alt="Telluride Logo">
-      <strong>Telluride House <br> at Cornell University</strong>
+      <a href="index.html" class="logo-link">
+        <img src="src/images/logo.png" alt="Telluride Logo">
+        <strong>Telluride House <br> at Cornell University</strong>
+      </a>
     </div>
     <nav>
       <a href="index.html">Home</a>
@@ -127,7 +129,7 @@
         from visiting guests to budgeting for social events. Discussions follow a version of 
         Robert’s Rules outlined in our governing documents.
       </p>
-      <img src="src/images/house_meeting.jpg" alt="Weekly House Meeting">
+      <img src="src/images/about/house_meeting.jpg" alt="Weekly House Meeting">
     </section>
 
     <section class="life-section">
@@ -164,7 +166,7 @@
         <li>Michigan Branch (MBTA) Liaison</li>
         <li>Cornell Relations Working Group Liaison</li>
       </ul>
-      <img src="src/images/committee.jpg" alt="Committees at Work">
+      <!-- <img src="src/images/about/committee.jpg" alt="Committees at Work"> -->
     </section>
 
     <section class="life-section">
@@ -175,7 +177,7 @@
         living room, second-floor lounge, and balconies. Maintenance requests 
         are handled through a shared system.
       </p>
-      <img src="src/images/common_area.jpg" alt="Common Room">
+      <img src="src/images/about/common_area.jpg" alt="Common Room">
     </section>
 
     <section class="life-section">
@@ -185,7 +187,7 @@
         including vegan, vegetarian, and gluten-free diets. On cultural occasions, 
         chefs prepare special dishes, sometimes with the help of members.
       </p>
-      <img src="src/images/meals.jpg" alt="Meals at Telluride">
+      <img src="src/images/about/meals.jpg" alt="Meals at Telluride">
     </section>
 
     <section class="life-section">
@@ -194,7 +196,7 @@
         Each member gives an hour-long presentation each year on a topic of their choice—ranging 
         from music and theory to labor history or the physics of self-driving cars.
       </p>
-      <img src="src/images/pubspeak.jpg" alt="PubSpeak Presentation">
+      <img src="src/images/about/pubspeak.jpg" alt="PubSpeak Presentation">
     </section>
 
     <section class="life-section">
@@ -204,24 +206,32 @@
         Guests engage with members during meals, in common spaces, and through scheduled programming. 
         Requests to stay at the guest house can be made through the booking platform.
       </p>
-      <img src="src/images/guests.jpg" alt="Guests at Telluride House">
+      <!-- <img src="src/images/about/guests.jpg" alt="Guests at Telluride House"> -->
     </section>
   </main>
 
   <footer>
-    <p><strong>Telluride House at Cornell University</strong> — 217 West Avenue, Ithaca, NY 14850</p>
-    <p>© 2025 Telluride House at Cornell University</p>
+    <div class="footer-top">
+      <p><strong>Telluride House </strong> — 217 West Avenue, Ithaca, NY 14850</p>
+      <p>Email: <a href="mailto:cbta.apply@tellurideassociation.org">cbta.apply@tellurideassociation.org</a> </p>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="https://www.instagram.com/Telluride_House_Cornell/" target="_blank" class="social-icon" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm10.25 2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zm-11 19H5V9h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.974.784-1.764 1.75-1.764S8 5.994 8 6.968c0 .974-.784 1.764-1.75 1.764zM20 19h-3v-5.604c0-1.338-.027-3.06-1.867-3.06-1.87 0-2.157 1.46-2.157 2.967V19h-3V9h2.877v1.367h.041c.401-.762 1.381-1.566 2.843-1.566 3.041 0 3.263 2.002 3.263 4.604V19z"/>
+          </svg>
+        </a>
+      </p>
+      <p>© Telluride House at Cornell University</p>
+    </div>
   </footer>
-
-  <script>
-    const header = document.querySelector("header");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    });
-  </script>
+  
+  <script src="src/scripts.js"></script>
 </body>
 </html>
